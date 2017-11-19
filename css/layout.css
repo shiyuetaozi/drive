@@ -1,0 +1,9 @@
+@charset "utf-8";
+body{overflow-y: hidden;}
+body {margin: 0;font-family: "微软雅黑";font-size: 14px;color: #333;cursor: default;}
+.header{height: 60px;background-color: #262f3d;position: fixed;top: 0;left: 0;right: 0;color: #fff;}
+.main{position: relative;top:60px;}
+.leftBar{height: 100%;width: 200px;z-index: 1;background-color: #354052;position: absolute;color: #fff;}
+.rmain{height: 100%;margin-left: 200px;position: relative;}
+.iframeBody{margin-bottom: 15px;}
+footer{height: 15px;background-color: red;position: fixed;bottom: 0;width: 100%;text-align: center;}

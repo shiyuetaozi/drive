@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap 模板</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入 Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css练习/test/css/layout.css">
+    <link rel="stylesheet" href="js/element-ui/unpkg.index.css" type="text/css">
+    <link rel="stylesheet" href="css/common.css">
+
+    <!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+    <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<div id="vueBox">
+    <!--头部-->
+    <header class="header" id="header">
+        <el-menu theme="dark" :default-active="activeIndex" class="el-menu-head" mode="horizontal" @select="handleSelect">
+            <el-menu-item index="1">订单记录</el-menu-item>
+            <el-menu-item index="2">教练记录</el-menu-item>
+            <el-menu-item index="3">学员记录</el-menu-item>
+            <el-menu-item index="4">提现申请</el-menu-item>
+            <el-menu-item index="5">订单维护</el-menu-item>
+            <!--<el-menu-item index="3"><a href="https://www.ele.me" target="_blank">订单管理</a></el-menu-item>-->
+        </el-menu>
+    </header>
+    <!--下半部-->
+    <section class="main">
+        
+        <!--右侧部位-->
+        <section class="rmain">
+            <div class="rmainBody">
+                <iframe id="iframeBody" class="iframeBody" name="iframeBody" width='100%'height="100%" scrolling="auto" frameBorder='no' src="views/home/home.html"></iframe>
+                <footer id="footer" class="copyright">Copyright&nbsp;©&nbsp;2016&nbsp;中科智城版权所有&nbsp;鲁ICP备13027167号-5&nbsp;鲁公网安备37081102000233号</footer>
+            </div>
+        </section>
+    </section>
+</div>
+<script src="js/element-ui/vue.min.js"></script>
+<script src="js/element-ui/unpkg.index.js"></script>
+<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+<!--<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>-->
+<script src="js/jquery.min.js"></script>
+<!-- 包括所有已编译的插件 -->
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="js/views/layout.js"></script>
+<script src="js/views/index.js"></script>
+
+</body>
+</html>
